@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>using github api</title>
+    <script src="activity2Logic.js" type="text/javascript"></script>
+</head>
+<body>
+    <label>Enter a valid GitHub user id: </label>
+    <input type='text' id='txtUsername' minlength='1'></input>
+    <button id = 'btnDetails' onclick="getUserRepo()">Get Details</button>
+    <br>
+    <p id='issueSection'></p>
+    <div id='table'></div>
+    <button id = 'btnRefresh' onclick="refresh()">Refresh</button>
+    <p id='branches'></p>
+</body>
+</html>

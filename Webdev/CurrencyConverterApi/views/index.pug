@@ -1,0 +1,15 @@
+
+extends layout
+
+block content
+  p(id='heading') Current Value is: 0 in USD
+  label(for='amount') ENTER IN USD:
+  input(type='number' id='amount-id' name='amount-name' onkeyup="stoppedTyping()")
+  br
+  button(class="btn", id='euroBtn' onclick='usdToEuros()' disabled = true) Euro
+  button(class="btn", id='poundBtn' onclick='usdToPounds()' disabled = true) Pound
+  button(class="btn", id='popBtn' onclick='pop()') Pop
+  button(class="btn", id='resetBtn' onclick='reset()' disabled = true) Reset
+  button(class="btn", id='historyBtn' onclick='history()') History
+  br
+  p(id='history')

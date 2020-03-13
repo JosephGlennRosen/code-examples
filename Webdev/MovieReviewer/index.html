@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head> 
+<body onload="checkCookie()">
+    <script src="activity3.js" type="text/javascript"></script>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name"><br>
+    <button type="button" onclick="setCookie('name', document.getElementById('name').value, 1)">Submit</button>
+    <p id='welcome'></p>
+    <p id='review-content'></p>
+    <label for='user-review'>Please give your comments</label>
+    <textarea id="user-review" rows="8" cols="100"></textarea>
+    <button type="button" onclick="replaceMeanWords()">Submit Review</button>
+    <br>
+    <p id='history-content'></p>
+</body>
+</html>
